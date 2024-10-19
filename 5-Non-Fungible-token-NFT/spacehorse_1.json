@@ -1,0 +1,16 @@
+{
+    "name": "Spacehorse Token",
+    "description": "Introducing the future of Cuteness. A Myhorse Token. Floating in Space. Save them by getting this NFT. Cuddle each one of them. You need them. Buy them now.",
+    "image": "https://drive.google.com/file/d/1LxcRyGLUESA9YVTbvQFpGeOen6peoJU0/view",
+    "external_url": "https://rtfkt.com",
+    "attributes": [
+        {
+            "trait_type": "Artefact", 
+            "value": "Myhorse"
+        },
+        {
+            "trait_type": "Collection", 
+            "value": "Genesis"
+        }
+    ]
+}
