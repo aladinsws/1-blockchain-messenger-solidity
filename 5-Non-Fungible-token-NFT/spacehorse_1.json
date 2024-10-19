@@ -1,8 +1,8 @@
 {
     "name": "Spacehorse Token",
-    "description": "Introducing the future of Cuteness. A Myhorse Token. Floating in Space. Save them by getting this NFT. Cuddle each one of them. You need them. Buy them now.",
-    "image": "https://drive.google.com/file/d/1LxcRyGLUESA9YVTbvQFpGeOen6peoJU0/view",
-    "external_url": "https://rtfkt.com",
+    "description": "Introducing the future of Cuteness. A Myhorse Token. Floating in Space. Save them by getting this NFT. Cuddle each one of them. You need them. Buy them now.Also, they are coming from https://github.com/aladinsws",
+    "image": "https://github.com/aladinsws/ethereum-blockchain-labs/blob/main/5-Non-Fungible-token-NFT/spacehorse.webp",
+    "external_url": "https://github.com/",
     "attributes": [
         {
             "trait_type": "Artefact", 
