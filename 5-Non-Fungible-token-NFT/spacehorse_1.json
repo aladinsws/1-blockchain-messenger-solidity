@@ -1,8 +1,8 @@
 {
     "name": "Spacehorse Token",
-    "description": "Introducing the future of Cuteness. A Myhorse Token. Floating in Space. Save them by getting this NFT. Cuddle each one of them. You need them. Buy them now.Also, they are coming from https://github.com/aladinsws",
+    "description": "Introducing the future of Cuteness. A Horse Token. Floating in Space. Save them by getting this NFT. Cuddle each one of them. You need them. Buy them now.Also, they are coming from https://github.com/aladinsws",
     "image": "https://raw.githubusercontent.com/aladinsws/ethereum-blockchain-labs/refs/heads/main/5-Non-Fungible-token-NFT/spacehorse.webp",
-    "external_url": "https://github.com/",
+    "external_url": "https://github.com/aladinsws",
     "attributes": [
         {
             "trait_type": "Artefact", 
@@ -10,7 +10,7 @@
         },
         {
             "trait_type": "Collection", 
-            "value": "Genesis"
+            "value": "Horses"
         }
     ]
 }
