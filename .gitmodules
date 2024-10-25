@@ -1,0 +1,3 @@
+[submodule "5-Non-Fungible-token-NFT/foundry/lib/forge-std"]
+	path = 5-Non-Fungible-token-NFT/foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
