@@ -3,14 +3,15 @@
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Spacehorse is ERC721, ERC721URIStorage, Ownable {
+import "@openzeppelin/contracts/utils/Strings.sol";
+
+contract Spacehorse is ERC721, Ownable {
     uint256 private _nextTokenId;
 
     constructor(address initialOwner)
-        ERC721("spacehorse", "SHR")
+        ERC721("Spacehorse", "SHR")
         Ownable(initialOwner)
     {}
 
@@ -18,27 +19,34 @@ contract Spacehorse is ERC721, ERC721URIStorage, Ownable {
         return "https://raw.githubusercontent.com/aladinsws/ethereum-blockchain-labs/refs/heads/main/5-Non-Fungible-token-NFT/";
     }
 
-    function safeMint(address to, string memory uri) public onlyOwner {
+    function buyToken() public payable {
+        uint256 tokenId = _nextTokenId;
+        require(msg.value== tokenId * 0.1 ether , "Wrong amount of funds sent !");
+
+        _nextTokenId++;
+        _safeMint(msg.sender, tokenId);
+    }
+
+    function safeMint(address to) public onlyOwner {
         uint256 tokenId = _nextTokenId++;
         _safeMint(to, tokenId);
-        _setTokenURI(tokenId, uri);
     }
 
     // The following functions are overrides required by Solidity.
 
     function tokenURI(uint256 tokenId)
         public
-        view
-        override(ERC721, ERC721URIStorage)
+        pure
+        override(ERC721)
         returns (string memory)
     {
-        return super.tokenURI(tokenId);
+        return string(abi.encodePacked(_baseURI(),"spacehorse_",Strings.toString(tokenId+1),".json"));
     }
 
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721, ERC721URIStorage)
+        override(ERC721)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
