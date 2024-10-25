@@ -1,3 +1,6 @@
 [submodule "5-Non-Fungible-token-NFT/foundry/lib/forge-std"]
 	path = 5-Non-Fungible-token-NFT/foundry/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "5-Non-Fungible-token-NFT/foundry/lib/openzeppelin-contracts"]
+	path = 5-Non-Fungible-token-NFT/foundry/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
